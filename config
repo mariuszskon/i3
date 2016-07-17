@@ -138,3 +138,14 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# lock shortcut
+bindsym $mod+l exec i3lock
+
+# application launch shortcuts
+# firefox - web browser
+bindsym $mod+Control+w exec firefox
+# pcmanfm - file manager
+bindsym $mod+Control+f exec pcmanfm
+# vlc - media player
+bindsym $mod+Control+m exec vlc
