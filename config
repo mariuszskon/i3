@@ -157,6 +157,12 @@ bindsym $mod+Control+f exec pcmanfm
 # vlc - media player
 bindsym $mod+Control+m exec vlc
 
+# workspace assignments
+assign [class="Firefox"] $workspace1
+assign [class="Emacs"] $workspace3
+assign [class="Vlc"] $workspace9
+assign [class="qBittorrent"] $workspace10
+
 
 # set wallpaper
 exec_always feh --bg-scale ~/wallpaper.png
