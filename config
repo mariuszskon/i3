@@ -81,11 +81,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # workspace names
-set $workspace1 "Web"
-set $workspace2 "Other"
-set $workspace3 "Emacs"
-set $workspace9 "Media"
-set $workspace10 "Background"
+set $workspace1 "1: Web"
+set $workspace2 "2: Other"
+set $workspace3 "3: Emacs"
+set $workspace9 "9: Media"
+set $workspace10 "10: Background"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
