@@ -160,6 +160,10 @@ bindsym $mod+Control+m exec vlc
 # emacs - editor
 bindsym $mod+Control+e exec emacs
 
+# media buttons
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+
 # workspace assignments
 assign [class="Firefox"] $workspace1
 assign [class="Emacs"] $workspace3
