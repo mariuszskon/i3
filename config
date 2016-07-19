@@ -170,3 +170,6 @@ assign [class="qBittorrent"] $workspace10
 # set wallpaper
 exec_always --no-startup-id feh --bg-scale ~/wallpaper.png
 
+# enable compositor to prevent tearing and add special effects
+exec --no-startup-id compton -CGb
+
