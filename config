@@ -8,6 +8,13 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 8
 
+# colours
+set $black     #000000
+set $darkgrey  #111111
+set $grey      #313131
+set $lightgrey #838383
+set $white     #FFFFFF
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -112,11 +119,30 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# colour scheme
+# class                 border     backgr.    text       indicator child_border
+client.focused          $grey      $grey      $white     $white    $grey
+client.focused_inactive $darkgrey  $darkgrey  $lightgrey $white    $darkgrey
+client.unfocused        $darkgrey  $darkgrey  $lightgrey $white    $darkgrey
+client.urgent           #2f343a    #900000    #ffffff    $white    #900000
+client.placeholder      #000000    #0c0c0c    #ffffff    $white    #0c0c0c
+
+client.background       #ffffff
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status
         mode           hide
+        font           pango:DejaVu Sans Mono 8
+        colors {
+            # class            border    backgr.   text
+            focused_workspace  $grey     $grey     $white
+            active_workspace   $grey     $grey     $white
+            inactive_workspace $darkgrey $darkgrey $lightgrey
+            urgent_workspace   #2f343a   #900000   #ffffff
+            binding_mode       #2f343a   #900000   #ffffff
+        }
 }
 
 # lock shortcut
