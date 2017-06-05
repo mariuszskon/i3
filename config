@@ -153,8 +153,6 @@ bindsym $mod+l exec i3lock
 bindsym $mod+Control+w exec firefox
 # pcmanfm - file manager
 bindsym $mod+Control+f exec pcmanfm
-# vlc - media player
-bindsym $mod+Control+m exec vlc
 # emacs - editor
 bindsym $mod+Control+e exec emacs
 
@@ -165,7 +163,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%-
 # workspace assignments
 assign [class="Firefox"] $workspace1
 assign [class="Emacs"] $workspace3
-assign [class="Vlc"] $workspace9
+assign [class="mpv"] $workspace9
 assign [class="qBittorrent"] $workspace10
 
 
