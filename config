@@ -171,5 +171,6 @@ assign [class="qBittorrent"] $workspace10
 exec_always --no-startup-id feh --bg-scale ~/wallpaper.png
 
 # enable compositor to prevent tearing and add special effects
-exec --no-startup-id compton -CGb
+# allow_rgb10_configs=false fixes issues with mesa 18
+exec --no-startup-id allow_rgb10_configs=false compton -CGb
 
