@@ -159,6 +159,12 @@ bindsym $mod+Control+e exec emacs
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%-
 
+# music player daemon management (mpd through mpc)
+bindsym $mod+Shift+braceright exec --no-startup-id "mpc clear && mpc add / && mpc shuffle && mpc play"
+bindsym $mod+backslash exec --no-startup-id mpc toggle
+bindsym $mod+Shift+greater exec --no-startup-id mpc next
+bindsym $mod+Shift+less exec --no-startup-id mpc prev
+
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
@@ -175,3 +181,5 @@ exec_always --no-startup-id feh --bg-scale ~/wallpaper.png
 # allow_rgb10_configs=false fixes issues with mesa 18
 exec --no-startup-id allow_rgb10_configs=false compton -CGb
 
+# start music player daemon (mpd)
+exec --no-startup-id mpd
