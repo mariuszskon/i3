@@ -178,7 +178,8 @@ assign [class="mpv"] $workspace9
 exec_always --no-startup-id feh --bg-scale ~/wallpaper.png
 
 # enable compositor to prevent tearing and add special effects
-exec --no-startup-id picom -CGb --fade-in-step=0.06 --fade-out-step=0.06 --inactive-opacity=0.9
+# glx works better for me atm, you might want the default (xrender) instead
+exec --no-startup-id picom --config /dev/null --daemon --backend glx --vsync --fading --fade-in-step=0.16 --fade-out-step=0.16
 
 # start music player daemon (mpd)
 exec --no-startup-id mpd
