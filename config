@@ -6,7 +6,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 10
 
 ## Base16 Solarized Dark
 # Author: Ethan Schoonover (modified by aramisgithub)
@@ -147,7 +147,7 @@ client.background       $base07
 bar {
     status_command i3status
     mode           hide
-    font           pango:DejaVu Sans Mono 8
+    font           pango:DejaVu Sans Mono 10
 
     colors {
         background $base01
